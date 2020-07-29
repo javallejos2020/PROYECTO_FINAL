@@ -39,7 +39,7 @@ $archivo=$fila['pantalla'];
   }else{
     if($codProceso=='P1'){
     echo "<br>";
-    echo "<a href=\"login/principalnutri.php\"><button type=\"button\" value=\"Anterior\" name=\"Anterior\" style='width:200px; height:40px'>Atras</button></a>";
+    //echo "<a href=\"login/principalnutri.php\"><button type=\"button\" value=\"Anterior\" name=\"Anterior\" style='width:200px; height:40px'>Atras</button></a>";
 
     echo "<input type=\"submit\" value=\"Siguiente\" name=\"Siguiente\" style='width:200px; height:40px'/>";
     
