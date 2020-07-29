@@ -10,8 +10,7 @@ carrera varchar(50),
 PRIMARY key(ci_estudiante)
 );
 
-INSERT INTO usuario VALUES ('1','Alvaro','Mamani','Agronomia','Ambiental');
-INSERT INTO usuario VALUES ('2','Juan','Valencio','Derecho','Civil');
+INSERT INTO estudiante VALUES ('1','Alvaro','Mamani','Agronomia','Ambiental');
 
 
 create table nutriologo (
@@ -32,7 +31,6 @@ clave varchar(20) not null
 INSERT INTO login VALUES ('11','11');
 INSERT INTO login VALUES ('12','12');
 INSERT INTO login VALUES ('1','1');
-INSERT INTO login VALUES ('2','2');
 
 create table cronograma (
 facultad varchar(100),
