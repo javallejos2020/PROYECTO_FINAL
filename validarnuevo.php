@@ -1,4 +1,4 @@
-<h2>¿Eres nuevo?</h2>
+
 <?php 
 include 'conexion.php';
 if (isset($_POST['envia'])) {
@@ -24,6 +24,7 @@ echo'</table>';
 	}
 }
 ?>
+
  <br>
-<input type="text" name="cond" value='<?php if(!empty($mensaje)) echo($mensaje); ?>'>
+<input type="text" name="cond" placeholder="Verificación Automática" value='<?php if(!empty($mensaje)) echo($mensaje); ?>'>
 <br>
