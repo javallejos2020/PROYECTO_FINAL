@@ -1,13 +1,14 @@
+	<link rel="stylesheet" type="text/css" href="css/estilofinal.css">
 	<section id="main-content">
 		<article>
 			<div class="content">
-				<h1><center>Cronograma</center></h1>
+				<h1><center>CRONOGRAMA</center></h1>
 				<br>
 				<table border="1" cellspacing=1 cellpadding=2 style="font-size: 8pt">
 				<tr>
-    			<td align="center"><font face="crono" size="4"><b>FACULTAD</b></font></td>
-    			<td align="center"><font face="crono" size="4"><b>FECHAS</b></font></td>
-    			<td align="center"><font face="crono" size="4"><b>HORA DE ATENCION</b></font></td>
+    			<td><font face="crono" size="4"><b>FACULTAD</b></font></td>
+    			<td><font face="crono" size="4"><b>FECHAS</b></font></td>
+    			<td><font face="crono" size="4"><b>HORA DE ATENCION</b></font></td>
     			<!--<td align="center"><font face="crono" size="4"><b>FECHA FIN</b></font></td>
     			<td align="center"><font face="crono" size="4"><b>HORA FIN</b></font></td>-->
     			</tr>   
