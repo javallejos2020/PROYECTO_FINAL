@@ -8,7 +8,7 @@
 form {
 	padding: 50px 20px;
 	background-color: #ededed;
-	margin: calc(25% + 100px);
+	margin: calc(15% + 100px);
 	margin-top: 70px;
 	padding-top: 28px;
 	margin-bottom: 30px
@@ -25,7 +25,7 @@ input {
 	padding: 9px;
 	margin: auto;
 	margin-top: 12px;
-	font-size: 16px;
+	font-size: 16px
 }
 
 input[type='submit']{
