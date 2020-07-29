@@ -2,7 +2,7 @@
 <head>
 	<title>Registrar Estudiante</title>
 	<meta charset="utf-8">
-	<!--<link rel="stylesheet" href="css/estilo1.css">-->
+	<link rel="stylesheet" href="css/estilo1.css">
 </head>
 <body>
        <?php 
