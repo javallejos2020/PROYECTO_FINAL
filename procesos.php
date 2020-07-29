@@ -8,13 +8,11 @@ if ($codProceso=='P8') {
   ?>
  <!-- <link rel="stylesheet" type="text/css" href="css/estilo.css">-->
   <form action="" method="POST">
-    <table>
-      <tr>
-        <th>CI:</th>
-        <td><input type="text" name="ci" required></td>
-        <td><input type="submit" name="ver" required></td>
-      </tr>
-    </table>
+  <h1><center>HISTORIAL</center></h1>
+    
+        <input type="text" name="ci" placeholder="Introduzca Carnet de Identidad" required><br>
+        <input type="submit" name="ver" required>
+   
   </form>
   <?php 
 }
@@ -24,10 +22,9 @@ if ($codProceso=='P8') {
 if ($codProceso=='P3') {
   ?>
   <form action="" method="POST">
-    <table>
-      <tr>
-        <td>
-          <select name="facultad">
+  <h1><center>VALIDAR FECHA</center></h1>
+ 
+          <select name="facultad" >
             <option disabled="">Facultades</option>
             <option value="Agronomia">Agronomia</option>
             <option value="Ciencias Geologicas">Ciencias Geologicas</option>
@@ -43,30 +40,25 @@ if ($codProceso=='P3') {
             <option value="Ingenieria">Ingenieria</option>
             <option value="Tecnologia">Tecnologia</option>
           </select>           
-        </td>
-        <td>
+       <br>
           <input type="date" name="fecha" required>
-        </td>
-      </tr>
-      <tr> <td colspan="2"> 
-        <input type="submit" name="Verifica" required></td></tr>
-      </table>
+       <br>
+      
+        <input type="submit" name="Verifica" required>
+    
 
       
     </form>
 
     <?php 
   }
+  
   if ($codProceso=='P4'):
     ?>
     <form  action="" method="POST">
-      <table>
-        <tr>
-          <th>CI:</th>
-          <td><input type="text" name="ci" required></td>
-          <td><input type="submit" name="envia" required></td>
-        </tr>
-      </table>
+	<h1><center>VALIDAR NUEVO</center></h1>
+        <input type="text" name="ci" placeholder="Introduzca Carnet de Identidad" required>        
+        <input type="submit" name="envia" required>			  
     </form>
 
   <?php endif ?>
@@ -95,25 +87,20 @@ if ($codProceso=='P3') {
     ?>
     <form method="post">
     	<h1>Registrar Valoracion</h1>
-      <table>
-        <tr>
-          <th>CI :</th>
-          <td><input type="text" name="ci" placeholder="Carnet de Identidad"></td>
-        </tr>
-        <tr>
-          <th>Peso:</th>
-          <td><input type="text" name="peso" placeholder="Peso"></td>
-          <th>Talla:</th>
-          <td><input type="text" name="talla" placeholder="Talla"></td>
-          <th>Estado:</th>
-          <td><input type="text" name="estado" placeholder="Estado"></td>
-        </tr>
-        <tr>
-          <td colspan="6">
-           <input type="submit" name="register"> 
-         </td>
-       </tr>
-     </table>
+        <input type="text" name="ci" placeholder="Carnet de Identidad"><br>
+        <input type="text" name="peso" placeholder="Peso"><br>
+        <input type="text" name="talla" placeholder="Talla"><br><br>
+		<select name="estado">
+            <option disabled="">Estado</option>
+            <option value="Bajo Peso">Bajo Peso</option>
+            <option value="Normal">Normal</option>
+            <option value="Sobre Peso">Sobre Peso</option>
+            <option value="Obesidad 1">Obesidad 1</option>
+            <option value="Obesidad 2">Obesidad 2</option>
+          </select>           <br>
+        <!--<input type="text" name="estado" placeholder="Estado">-->
+        <input type="submit" name="register"> 
+    
    </form>
    <?php 
  }
