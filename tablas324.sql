@@ -12,7 +12,6 @@ PRIMARY key(ci_estudiante)
 
 INSERT INTO estudiante VALUES ('1','Alvaro','Mamani','Agronomia','Ambiental');
 
-
 create table nutriologo (
 ci_nutriologo varchar(10),
 nombre varchar(100),
@@ -28,9 +27,9 @@ ci varchar(10) not null,
 clave varchar(20) not null
 );
 
-INSERT INTO login VALUES ('11','11');
-INSERT INTO login VALUES ('12','12');
-INSERT INTO login VALUES ('1','1');
+INSERT INTO login VALUES ('11','aa');
+INSERT INTO login VALUES ('12','ab');
+INSERT INTO login VALUES ('1','holabb');
 
 create table cronograma (
 facultad varchar(100),
@@ -54,7 +53,30 @@ insert into cronograma values('Humanidades y Ciencias de la Educacion','2020-09-
 insert into cronograma values('Ingenieria','2020-10-01','2020-10-14','09:00','18:30');
 insert into cronograma values('Tecnologia','2020-10-15','2020-10-24','09:00','18:30');
 
+create table valoracion (
+ci_estudiante varchar(10),
+peso double (6,2),
+talla double (3,2), 
+estado varchar(100)
+);
 
+insert into valoracion values('1',70,1.65,'Normal');
+
+(peso en Kilogramos)/(altura en cm * altura en cm)
+INDICE DE MASA CORPORAL
+create table indicecorporal (
+masainf double (6,2),
+masaext double (6,2),
+clasificacion varchar(100),
+riesgo varchar(50)
+);
+
+insert into indicecorporal values (10,18.5,'Deficit de masa corporal','Bajo (riesgo de enfermedades)');
+insert into indicecorporal values (18.5,24.9,'Masa corporal normal','Normal');
+insert into indicecorporal values (25.0,29.9,'Sobrepeso','Elevado');
+insert into indicecorporal values (30.0,34.9,'Obesidad leve','Alto');
+insert into indicecorporal values (35.0,39.9,'Obesidad media','Muy alto');
+insert into indicecorporal values (39.9,50,'Obesidad morbida','Inminente');
 
 create table historial (
 ci_estudiante varchar(10),
@@ -66,7 +88,7 @@ estado varchar(100)
 );
 
 insert into historial values('1','Alvaro','Mamani',70,1.65,'Normal');
-
+	insert into historial values('1','','',79,1.65,'Normal');
 
 -------------------------------
 base de datos= flujo2
