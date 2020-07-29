@@ -8,6 +8,6 @@ $fila=mysqli_fetch_array($result);
 
 $codProceso=$fila['codProceso'];
 */
-//echo "--------".$codProceso."-----";
+echo "--------".$codProceso."-----";
 
 ?>
